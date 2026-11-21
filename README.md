@@ -7,6 +7,7 @@ La app es un juego estático (Whack-a-mole) servido con nginx.
 
 ```
 app/                        # archivos del juego (HTML, CSS, imagen)
+argocd/application.yml      # Application de Argo CD que sincroniza k8s/
 Dockerfile                  # imagen nginx con el juego
 .github/workflows/build.yml # construye y publica la imagen en GHCR
 k8s/                        # manifiestos que Argo CD sincroniza
